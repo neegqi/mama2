@@ -45,7 +45,7 @@ exports.parseYoukuCode = function (videoId, callback) {
           client_id: "youkumobileplaypage"
         }
 
-        var videoSource = "http://pl.youku.com/playlist/m3u8?" + urlParameter(urlquery);
+        var videoSource = "http://pl-ali.youku.com/playlist/m3u8?" + urlParameter(urlquery);
         callback([
           ['超清', videoSource.replace('[[type]]', 'hd2')],
           ['高清', videoSource.replace('[[type]]', 'mp4')],
